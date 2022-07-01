@@ -49,7 +49,7 @@ const Products = () => {
 	return (
 		<div className="grid">
 			{products.map((product) => (
-				<Product product={product} cart={false} />
+				<Product key={product.id} product={product} cart={false} />
 			))}
 		</div>
 	);
